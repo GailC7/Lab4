@@ -26,7 +26,8 @@ namespace Lab4
         //ToString
         public override string ToString()
         {
-            return base.ToString();
+            return this.StreetAddress + " | " + this.City 
+                    + " | " + this.State + " | " + this.PostalCode;
         }
     }
 }
