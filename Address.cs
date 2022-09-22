@@ -15,6 +15,18 @@ namespace Lab4
         public string PostalCode { get; init; }
 
         //constructor
+        public Address(string streetAddress, string city, string state, string postalCode)
+        {
+            StreetAddress = streetAddress;
+            City = city;
+            State = state;
+            PostalCode = postalCode;
+        }
 
+        //ToString
+        public override string ToString()
+        {
+            return base.ToString();
+        }
     }
 }
