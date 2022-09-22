@@ -30,8 +30,10 @@ using (StreamReader sr = new StreamReader(csvFile))
     }
 }
 
+Console.WriteLine("------Sorting------");
 people.Sort();
 
+Console.WriteLine("......PSV File Write.......");
 using (var sw = new StreamWriter(psvFile, append:false))
 {
     foreach(Person p in people)
@@ -41,5 +43,7 @@ using (var sw = new StreamWriter(psvFile, append:false))
 
     }
 }
+
+Console.WriteLine("___________DONE___________");
 
 
