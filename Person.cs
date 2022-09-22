@@ -26,7 +26,7 @@ namespace Lab4
         //ToSTring
         public override string ToString()
         {
-            return 
+            return this.FirstName + " | " + this.LastName + " | " + this.Address.ToString();
         }
 
     }
