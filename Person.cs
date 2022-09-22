@@ -28,10 +28,5 @@ namespace Lab4
         {
             return this.FirstName + " | " + this.LastName + " | " + this.Address.ToString();
         }
-
     }
-
-
-
-
 }
