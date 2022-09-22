@@ -31,7 +31,10 @@ namespace Lab4
 
         public int CompareTo(Person? other)
         {
-            return other.LastName.CompareTo(other.LastName);
+            Person compPerson = (Person)other;
+
+            return string.Compare(this.LastName, compPerson.LastName);
+            
         }
     }
 }
