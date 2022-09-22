@@ -28,5 +28,10 @@ namespace Lab4
         {
             return this.FirstName + " | " + this.LastName + " | " + this.Address.ToString();
         }
+
+        public int CompareTo(Person? other)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

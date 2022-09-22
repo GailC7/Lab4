@@ -32,9 +32,4 @@ using (StreamReader sr = new StreamReader(csvFile))
 
 people.Sort();
 
-Console.WriteLine("------------PSV FILE------------");
-using(var sw = new StreamWriter(psvFile))
-{
 
-
-}
