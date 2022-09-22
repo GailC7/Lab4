@@ -8,6 +8,7 @@ namespace Lab4
 {
     internal class FileRoot
     {
-
+        public static string Root = 
+            Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.ToString();
     }
 }
