@@ -10,12 +10,23 @@ using (StreamReader sr = new StreamReader(csvFile))
 {
     while(!sr.EndOfStream)
     {
+        //reads and splits
         string line = sr.ReadLine();
         var data = line.Split(",");
 
+        //gets data from csv file and splits and assigns it to value
         string fName = data[0];
-        string lName = data[1]; 
-        var street
+        string lName = data[1];
+        string streetAddress = data[2];
+        string city = data[3];
+        string state = data[4];
+        string postalCode = data[5];
+
+        //creates Address object for Person object
+        Address address = new Address(streetAddress, city, state, postalCode);
+
+        //creates Person object and adds to list
+        people.Add(new Person(fName, lName, address));
 
 
     }
