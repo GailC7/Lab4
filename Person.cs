@@ -7,11 +7,25 @@ using System.Threading.Tasks;
 
 namespace Lab4
 {
-    internal class Person
+    //properties
+    internal class Person : IComparable<Person>
     {
         public string FirstName { get; init; }
         public string LastName { get; init; }
         public Address Address { get; init; }
 
+        //constructor
+        public Person(string fName, string lName, Address addy)
+        {
+            FirstName = fName;
+            LastName = lName;
+            Address = addy;
+
+        }
+
     }
+
+    
+
+    //ToSTring
 }
