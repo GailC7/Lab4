@@ -27,7 +27,14 @@ using (StreamReader sr = new StreamReader(csvFile))
 
         //creates Person object and adds to list
         people.Add(new Person(fName, lName, address));
-
-
     }
+}
+
+people.Sort();
+
+Console.WriteLine("------------PSV FILE------------");
+using(var sw = new StreamWriter(psvFile))
+{
+
+
 }
