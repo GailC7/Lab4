@@ -32,4 +32,14 @@ using (StreamReader sr = new StreamReader(csvFile))
 
 people.Sort();
 
+using (var sw = new StreamWriter(psvFile, append:false))
+{
+    foreach(Person p in people)
+    {
+        string line = $"{p.FirstName} | {p.LastName} | {p.Address}";
+        sw.WriteLine(line);
+
+    }
+}
+
 
