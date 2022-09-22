@@ -29,9 +29,9 @@ namespace Lab4
             return this.FirstName + " | " + this.LastName + " | " + this.Address.ToString();
         }
 
-        public int CompareTo(Person x, Person y)
+        public int CompareTo(Person? other)
         {
-            return x.LastName.CompareTo(y.LastName);
+            return other.LastName.CompareTo(other.LastName);
         }
     }
 }
